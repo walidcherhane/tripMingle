@@ -1,0 +1,30 @@
+{
+  "cli": {
+    "version": ">= 12.4.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "env": {
+        "ANDROID_KOTLIN_VERSION": "1.9.25"
+      }
+    },
+    "development-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {},
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
